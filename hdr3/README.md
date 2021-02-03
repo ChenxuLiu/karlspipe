@@ -31,6 +31,31 @@ Chenxu's process
       amp x1 x2 y1 y2
       311RU 538 556 755 737
 
+2 bias
+
+  2.1 the execute folder
+  
+    /work/05178/cxliu/wrangler/hdr3/bias
+ 
+  2.2 the scripts
+  
+     cp /work/00115/gebhardt/hdr/karlspipe/hdr2.1/bias/* .
+     cp /work/00115/gebhardt/maverick/gettar/r1.202* .
+ 
+ 2.3 files to run: from Aug 2020 to Jan 2021
+        
+	r1.2*
+
+ 2.4 how to run (take the first one as an example)
+  
+     mkdir 202008bias
+     /home/05178/cxliu/bin/rjob r1.202008 1 "04:00:00" # wrangler
+     /home1/05178/cxliu/bin/rjob r1.202008 1 "04:00:00" # stampede2
+     
+ 2.5 files expected
+ 
+     /work/05178/cxliu/wrangler/hdr3/bias/202*/*.fits
+
 --------------------------------------
 Below is Karl's original readme file
 --------------------------------------
